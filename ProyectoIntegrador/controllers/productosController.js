@@ -1,10 +1,10 @@
-const productosController = {
+const productosController ={
     index: function(req,res){
         res.render("index", )
     },
 
     product: function(req,res){
-        res.render("producto", )
+        res.render("product", )
     },
 
     productAdd:  function(req, res){
