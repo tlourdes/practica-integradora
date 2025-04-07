@@ -2,10 +2,10 @@
 const express = require("express")
 const router = express.Router()
 
-router.get("/",   )
+router.get("/", productosController.products)
 
-router.get("/detalle/:id",    )
+router.get("/detalle/:id", productosController.product)
 
-router.get("/agregar",   )
+router.get("/agregar", productosController.product-add)
 
 module.exports= router;
