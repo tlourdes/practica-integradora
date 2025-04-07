@@ -4,4 +4,4 @@ const perfilController ={
     }
 }
 
-module.exports = pefilController
+module.exports = perfilController
