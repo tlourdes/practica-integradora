@@ -1,6 +1,6 @@
 const productosController ={
-    index: function(req,res){
-        res.render("index", )
+    products: function(req,res){
+        res.render("products", )
     },
 
     product: function(req,res){
