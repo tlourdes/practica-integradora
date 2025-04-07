@@ -1,6 +1,8 @@
 // index, product, add product
 const express = require("express")
 const router = express.Router()
+const productosController= require("../controllers/productosControllers")
+const usuarioController= require("../controllers/usuaio")
 
 router.get("/", productosController.products)
 
