@@ -4,14 +4,14 @@ const data = {
     usuario: {
         
         email : "lpeiranozavaglia@udesa.com",
-        usuario : "Luciano Peirano", 
+        nombre_perfil: "Luciano Peirano", 
         contrasena : "Integrador10" , 
         fecha_de_nacimiento :"2000-02-01" , 
         numero_de_documento : "45074993",  
         foto_de_perfil : "https://plus.unsplash.com/premium_photo-1730105510326-7e23c2c441f7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tYnJlJTIwbWVkaWElMjBjYXJhfGVufDB8fDB8fHww", 
         
         },
-    prodcutos: [
+    productos: [
 
      {
         id : 1, 
