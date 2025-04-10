@@ -1,4 +1,4 @@
-const dato = require("../db/product")
+const data = require("../db/product")
 
 const perfilController ={
     perfil: function(req, res){
