@@ -1,4 +1,5 @@
 const data = require("../db/product")
+const searchResultsController = require("./search-results")
 const productosController ={
     products: function(req,res){
         res.render("products", {
@@ -16,6 +17,7 @@ const productosController ={
 
     productAdd:  function(req, res){
         res.render("product-add",  )
+
     }
 }
 
