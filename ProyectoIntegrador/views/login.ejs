@@ -21,7 +21,8 @@
 			<!-- Show the "ultimos" products -->
 			<h2 class="col-12"> 
 				<br>
-				<form action="/" method="get">
+				<div class="contenedorForms">
+				<form action="/" method="get" class="formLogin">
 					<label for="email">Usuario</label>
 					<input type="email" name="email" required>
 					<label for="contraseña">Contraseña</label>
@@ -31,6 +32,7 @@
 					<button type="submit">Enviar</button>
 				</form><br>
 
+				</div>
 	<!-- footer -->
 	<%- include("./partials/footer") %>
 	<!-- /footer -->

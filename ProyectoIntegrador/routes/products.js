@@ -2,7 +2,7 @@
 const express = require("express")
 const router = express.Router()
 const productosController= require("../controllers/productosController")
-const usuarioController= require("../controllers/usuario")
+const usuarioController= require("../controllers/usuarioController")
 
 router.get("/", productosController.products)
 

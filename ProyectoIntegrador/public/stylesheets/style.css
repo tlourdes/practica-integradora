@@ -564,3 +564,45 @@ text-decoration: underline;
   justify-content: center;
   align-items: center;
 }
+
+.contenedorForms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: x-large;
+  
+
+}
+
+
+.contenedorForms form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  padding: 80px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 8px;
+  
+
+}
+
+.contenedorForms button{
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgb(22, 33, 189);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
+.container label{
+  font-size: 20px;
+  padding-top: 7px;
+  padding-bottom: 4px;
+
+}
