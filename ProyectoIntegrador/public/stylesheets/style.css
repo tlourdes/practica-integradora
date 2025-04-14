@@ -1,7 +1,7 @@
 /*====== estos 2 no se si hacen falta o si borrarlos ======*/
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lato", "Special Gothic Expanded One", Arial, sans-serif;
 }
 
 a {
@@ -14,13 +14,13 @@ a {
 
 /*====== Variables ======*/
 :root {
-  --yellow: #EAC926;
+  --yellow: #1e4bc6  ;
   --dark-blue: #03264C;
   --light-blue: #1259c3;
   --gray: #666666;
   --light-gray: #ebebeb;
   --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif
+  --base-font-family: 'lato', "Special Gothic Expanded One"
 }
 
 
@@ -150,7 +150,7 @@ hr {
 }
 
 .logout:hover{
-  color: #1259c3;
+  color: #0ebaf8;
 }
 
 .left-navbar a,
@@ -537,4 +537,19 @@ textarea.form-input {
     width: 95%;
     margin: auto;
   }
+}
+
+a{
+  font: bolder;
+  
+}
+
+.titulo{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.main-header a{
+color: #fff;
+text-decoration: underline;
 }
