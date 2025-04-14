@@ -553,3 +553,14 @@ a{
 color: #fff;
 text-decoration: underline;
 }
+.logout{
+  color: #fff;
+  text-decoration: underline;
+  }
+
+.logo{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
