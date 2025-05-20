@@ -10,6 +10,8 @@ var usersRouter = require('./routes/users');
 const perfilRouter = require("./routes/perfil");
 const productsRouter = require("./routes/products");
 const searchResultsRouter = require("./routes/search-results");
+const loginRouter = require('./routes/login');
+const registerRouter = require('./routes/register');
 
 
 var app = express();
@@ -27,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', productsRouter);
 app.use('/miPerfil', perfilRouter);
 app.use('/resultados', searchResultsRouter);
+app.use('/login', loginRouter);  
+app.use('/regsiter', registerRouter);  
 
 app.use('/users', usersRouter);
 
