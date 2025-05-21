@@ -22,8 +22,18 @@ const data = {
                usuario : " Martina López"  ,
                texto : "No entendí bien el modelo, pero se ve interesante." , 
                imagen : "https://media.istockphoto.com/id/1344963248/es/foto/foto-de-estudio-de-una-atractiva-joven-posando-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=DdBQQamVbdUFuw9UJjg30u6EYIy0Y3PaTRoT9ORaTPY=" , 
+           },
+           {
+               usuario : "Lucas Gonzalez"  ,
+               texto : "Buenisimo" , 
+               imagen : "https://st3.depositphotos.com/12985790/15794/i/450/depositphotos_157947226-stock-photo-man-looking-at-camera.jpg" , 
+           },
+           {
+            usuario : "Sofia Peña"  ,
+            texto : "Increible" , 
+            imagen : "https://img.freepik.com/foto-gratis/mujer-joven-hermosa-sueter-rosa-calido-aspecto-natural-sonriente-retrato-aislado-cabello-largo_285396-896.jpg?semt=ais_hybrid&w=740"
            }
-        ]
+          ]
       },
       {
         id : 2, 
@@ -32,7 +42,7 @@ const data = {
         descripcion : "El Nubia Focus 5G 256 GB combina la potencia de su procesador A76 / A55 con la memoria RAM de 6GB para obtener un rendimiento más rápido y eficiente" , 
         comentarios: [
            {
-               usuario : "Tomás Rivas"  ,
+               usuario : "Sofia Rivas"  ,
                texto :"Tremendo celular, gracias por mostrar!"  , 
                imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" , 
            }
@@ -48,7 +58,12 @@ const data = {
                usuario : "Leandro Méndez"  ,
                texto : "¡Esto me cebó una banda, bro!" , 
                imagen : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBsljEYdIiJcbrbzwnxzEJAY0wBpETtXanUw&s" , 
-           }
+           },
+           {
+            usuario : "Tomás Rivas"  ,
+            texto :"Tremendo, lo recomiendo"  , 
+            imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" , 
+        }
         ]
       },
       {
@@ -63,7 +78,17 @@ const data = {
                usuario : "Camila Ferraro"  ,
                texto : "No me terminó de convencer, esperaba otra cosa" , 
                imagen : "https://plus.unsplash.com/premium_photo-1664537980500-30bb5ec506e1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyYSUyMGRlJTIwbXVqZXJ8ZW58MHx8MHx8fDA%3D" , 
-           }
+           }, 
+           {
+            usuario : "Sofia Rivas"  ,
+            texto :"Tremendo"  , 
+            imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" , 
+        }, 
+        {
+          usuario : "Agustina Perez"  ,
+          texto :"Muy bueno, gracias!"  , 
+          imagen : "https://img.freepik.com/fotos-premium/mujer-bonita-joven-que-siente-romantica-feliz-enamorada-sonriendo-alegremente-tomados-mano-cerca-corazon_1194-206979.jpg?semt=ais_hybrid&w=740" , 
+      }
         ]
       },
       {
@@ -76,7 +101,17 @@ const data = {
                usuario : "Sofía Quintana"  ,
                texto : "Muy básico, le falta mejorar los detalles" , 
                imagen : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclWLAdilrP5qCh9DT_p3nXfipW2fQuC6fS38vpnKQgm994W_-3v-mDaodpX4GTrtYois&usqp=CAU" , 
-           }
+           }, 
+           {
+            usuario : "Joaquin Martinez"  ,
+            texto : "No recomiendo" , 
+            imagen : "https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg" , 
+        }, 
+        {
+          usuario : "Valentina Rodriguez"  ,
+          texto : "No funciona como esperaba" , 
+          imagen : "https://www.unwomen.org/sites/default/files/Communications/Headquarters/Images/02_WhatWeDo_LeadershipAndPoliticalParticipation_675x350.jpg?la=en" , 
+      }, 
         ]
       },
       {
@@ -89,7 +124,12 @@ const data = {
                usuario : "Ezequiel Torres"  ,
                texto : "Top, directo al punto." , 
                imagen :" https://media.istockphoto.com/id/155068180/es/foto/guy-real.jpg?s=612x612&w=0&k=20&c=VDSua2eTduOoccz7LZZWxNhGMur6hl6jZKIqAiY3w68=" , 
-           }
+           }, 
+           {
+            usuario : "Lola Torres"  ,
+            texto : "Buenisimo" , 
+            imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQounQIK68apUjGKJaqnB7wdw94YQ5lSmY-Og&s" , 
+        }, 
         ]
       },
       {
@@ -102,8 +142,18 @@ const data = {
                usuario : "Valentina Russo"  ,
                texto : "¿Podés mostrar más specs de esto?" , 
                imagen : "https://media.istockphoto.com/id/1036189988/es/foto/hombre-afroamericano-joven-mirando-de-cerca.jpg?s=612x612&w=0&k=20&c=0nAMVlvkB4b8ixGrRlXU8WrgZnpOlQMUKKq5wduhiQM=" , 
-           }
-        ]
+           }, 
+            {
+              usuario : "Santiago López"  ,
+              texto : "Me encanta, lo quiero ya!" , 
+              imagen : "https://media.istockphoto.com/id/1472496140/es/foto/retrato-de-un-joven-hombre-con-barba.jpg?s=612x612&w=0&k=20&c=8X9g2QjZxJwH6v5z7m1lY4h3M9yDqj2oW4aG5vE3G0s=" ,
+      },
+      {
+        usuario : "Sofia Rivas"  ,
+        texto :"Tremendo"  , 
+        imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" ,
+      }
+    ]
       },
       {
         id : 8, 
@@ -115,7 +165,18 @@ const data = {
                usuario : "Gonzalo Paredes"  ,
                texto : "Buenísima opción, me lo voy a comprar." , 
                imagen : "https://media.istockphoto.com/id/1042419562/es/foto/retrato-de-hombre-africano-maduro-serio-en-busca.jpg?s=612x612&w=0&k=20&c=m2KeBp-QRHUXPKfachxyqwZaL2ZzKnzMOkVwlbtwDlA=" , 
-           }
+           }, 
+           {
+            usuario : "Santiago López"  ,
+            texto : "Me encanta, lo quiero ya!" , 
+            imagen : "https://media.istockphoto.com/id/1472496140/es/foto/retrato-de-un-joven-hombre-con-barba.jpg?s=612x612&w=0&k=20&c=8X9g2QjZxJwH6v5z7m1lY4h3M9yDqj2oW4aG5vE3G0s=" ,
+    },
+    {
+      usuario : "Sofia Rivas"  ,
+      texto :"Tremendo"  , 
+      imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" ,
+    }
+
         ]
       },
       {
@@ -128,7 +189,12 @@ const data = {
                usuario : "Luciana Cabrera"  ,
                texto : "No sé si vale lo que cuesta, ojo" , 
                imagen : "https://st.depositphotos.com/1715570/2349/i/450/depositphotos_23493623-stock-photo-handsome-young-man.jpg" , 
-           }
+           },
+           {
+            usuario : "Sofia Rivas"  ,
+            texto :"Por lo que vale, no me convence"  , 
+            imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" ,
+          }
         ]
       },
       {
@@ -141,7 +207,12 @@ const data = {
                usuario : "Ramiro Ayala"  ,
                texto : "La rompiste. Justo lo que buscaba." , 
                imagen : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwb_0CFfc0-Ypb5h13U4AutGQF7DavLCwZFDBYwMgcmn--KOnBJ-UX1OprKZFO39hAQYc&usqp=CAU" , 
-           }
+           }, 
+           {
+            usuario : "Sofia Rivas"  ,
+            texto :"Muy bueno"  , 
+            imagen : "https://media.istockphoto.com/id/1442556244/es/foto/retrato-de-una-mujer-joven-y-hermosa-con-una-piel-lisa-perfecta-aislada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=My4mRtYfgT3EIvb2byYX4w7Vs0Vo8kusov0YBD9I-MY=" ,
+          }
         ]
       },
       

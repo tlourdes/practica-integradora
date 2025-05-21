@@ -10,7 +10,9 @@ module.exports = function(sequelize, dataTypes){
             type : dataTypes.STRING(100)
         },
         email:{
-            type : dataTypes.STRING(100)
+            type : dataTypes.STRING(100),
+            unique: true,
+            allowNull: false
         },
         contra:{
             type : dataTypes.STRING(30)

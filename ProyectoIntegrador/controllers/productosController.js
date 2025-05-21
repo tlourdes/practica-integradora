@@ -1,5 +1,5 @@
-const data = require("../db/product")
-const searchResultsController = require("./search-resultsController")
+const data = require("../db/product");
+//const searchResultsController = require("./search-resultsController")
 const productosController ={
     products: function(req,res){
         res.render("products", {

@@ -4,6 +4,8 @@ const router = express.Router()
 const productosController= require("../controllers/productosController")
 const usuarioController= require("../controllers/usuarioController")
 
+
+
 router.get("/", productosController.products)
 
 router.get("/detalle/:id", productosController.product)

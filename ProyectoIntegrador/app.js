@@ -7,12 +7,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 const perfilRouter = require("./routes/perfil");
 const productsRouter = require("./routes/products");
 const searchResultsRouter = require("./routes/search-results");
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 
+const session = require('express-session');
 
 var app = express();
 
@@ -26,11 +28,33 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(session({secret: "Secret", 
+  resave: false, 
+  saveUninitialized: true}));
+
+app.use(function(req, res, next){
+  if(req.session.userLoggeado != undefined){
+    res.locals.userLoggeado = req.session.userLoggeado;
+  }
+  return next();
+});
+
+
+app.use(function(req, res, next){
+  if(req.cookies.recordame != undefined && req.session.userLoggeado == undefined){
+    req.session.userLoggeado = req.cookies.recordame;
+  }
+  return next();
+});
+
+
+
 app.use('/', productsRouter);
 app.use('/miPerfil', perfilRouter);
 app.use('/resultados', searchResultsRouter);
 app.use('/login', loginRouter);  
-app.use('/regsiter', registerRouter);  
+app.use('/register', registerRouter);  
 
 app.use('/users', usersRouter);
 
