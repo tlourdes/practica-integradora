@@ -18,9 +18,9 @@
 			<% for( let i = 0; i < productos.length; i++ ) { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<section class="product-box">
-						<a href="/detalle/:id">
+						<a href="/detalle/<%= productos[i].id %>"></a>
 							<figure class="product-box_image">
-								<img src="<%= productos[i].imagen%>" alt="cafetera moulinex">
+								<img src="<%= productos[i].imagen%>" alt="">
 							</figure>
 							<article class="product-box_data">
 								<h2> <%= productos[i].nombre_producto %></h2>
@@ -37,15 +37,14 @@
 			   
 			  <% } else{ %>
 				<ul>
-					  <% for( let i = 0; i < productos.length; i++ ) { %>
+
 			  
-						<li><a href="/detalle/<%=productos[i].id%>"><h3><%= productos[i].nombre_producto %></h3> </a>
-</li>
+						
 						
 			  
 					  
 					  <% } %>
-					  <% } %>
+					
 
 	<!-- footer -->
 	<%- include("./partials/footer") %>

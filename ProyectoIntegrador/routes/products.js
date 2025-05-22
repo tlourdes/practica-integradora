@@ -14,6 +14,10 @@ router.get("/agregar", productosController.productAdd)
 
 router.get("/login", usuarioController.login)
 
+
 router.get("/register", usuarioController.register)
+
+
+
 
 module.exports= router;
