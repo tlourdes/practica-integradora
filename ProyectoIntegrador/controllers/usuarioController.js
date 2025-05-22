@@ -66,13 +66,15 @@ const usuarioController={
         .then(function(resultado){
             if(resultado != null){
                
-                let check = bcrypt.compareSync(req.body.contra, resultado.contra); // en vez de req.body.password puedo poner passEncriptada?
+                let check = bcrypt.compareSync(req.body.contra, resultado.contra); 
+                console.log(check)
                 if(check){
                     
                     req.session.userLoggeado = resultado
                     if(req.body.recordame != undefined){
                         res.cookie("recordame", resultado, {maxAge: 1000 * 60 * 60})
                     }
+                    console.log(req.session.userLoggeado)
                     return res.redirect("/");
                 }
             }  
