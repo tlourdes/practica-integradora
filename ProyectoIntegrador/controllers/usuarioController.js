@@ -87,6 +87,13 @@ const usuarioController={
             return res.send(error);
         })
     
+    },
+    
+    logout: function(req,res){
+        req.session.destroy();
+        res.clearCookie("recordame");
+        return res.redirect("/");
+        
     }
 
 }

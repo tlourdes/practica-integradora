@@ -14,6 +14,7 @@ const productsRouter = require("./routes/products");
 const searchResultsRouter = require("./routes/search-results");
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
+const logoutRouter = require('./routes/logout');
 
 const session = require('express-session');
 
@@ -56,6 +57,8 @@ app.use('/miPerfil', perfilRouter);
 app.use('/resultados', searchResultsRouter);
 app.use('/login', loginRouter);  
 app.use('/register', registerRouter);  
+app.use('/logout', logoutRouter); 
+
 
 app.use('/users', usersRouter);
 

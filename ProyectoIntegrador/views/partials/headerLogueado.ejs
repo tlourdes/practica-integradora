@@ -62,7 +62,7 @@
 					<li>
 						<% if (locals.userLoggeado != undefined) { %>
 							<h2>Bienvenido: <%=locals.userLoggeado.email%></h1>
-							<form action="/users/logout" method="post">
+							<form action="/logout" method="post">
 								<button type="submit">Logout</button>    
 							</form>
 							
