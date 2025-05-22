@@ -76,7 +76,7 @@ const usuarioController={
                     }
                     console.log(req.session.userLoggeado)
                     return res.redirect("/");
-                }
+                } else{return res.send("Contraseña incorrecta");}
             }  
             else{
                 return res.send("Usuario no encontrado");

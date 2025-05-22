@@ -32,6 +32,20 @@
 				</div>
 			<% } %>
 
+			<% if (productos.length==0) { %>
+				<p>No hay resultados para su criterio de búsqueda</p>
+			   
+			  <% } else{ %>
+				<ul>
+					  <% for( let i = 0; i < productos.length; i++ ) { %>
+			  
+						<li><a href="/detalle/<%=productos[i].id%>"><h3><%= productos[i].nombre_producto %></h3> </a>
+</li>
+						
+			  
+					  
+					  <% } %>
+					  <% } %>
 
 	<!-- footer -->
 	<%- include("./partials/footer") %>
