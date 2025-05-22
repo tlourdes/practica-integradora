@@ -57,15 +57,35 @@ const usuarioController={
             return res.render("login", {title: "Login"})
         }
     },
-    processLogin: function(req,res){ // erminar la parte del login
+    processLogin: function(req,res){ //no anda (x mas q el email no este en la db te deja loguearte)
         Usuario.findOne({
-            where: {
+            where: [{
                 email: req.body.email
-            }
+            }]
         })
+        .then(function(resultado){
+            if(resultado != null){
+               
+                let check = bcrypt.compareSync(req.body.contra, resultado.contra); // en vez de req.body.password puedo poner passEncriptada?
+                if(check){
+                    
+                    req.session.userLoggeado = resultado
+                    if(req.body.recordame != undefined){
+                        res.cookie("recordame", resultado, {maxAge: 1000 * 60 * 60})
+                    }
+                    return res.redirect("/");
+                }
+            }  
+            else{
+                return res.send("Usuario no encontrado");
+            }
+            
+        })
+        .catch(function(error){
+            return res.send(error);
+        })
+    
     }
 
 }
 module.exports = usuarioController;
-
-

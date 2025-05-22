@@ -58,12 +58,15 @@
 						<%= usuario.nombre_perfil %> <i class="fas fa-user"></i>
 						</a>
 					</li>
+
 					<li>
-						<form action="/" >
-							<button class="logout" type="submit">
-								Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-							</button>
-						</form>
+						<% if (locals.userLoggeado != undefined) { %>
+							<h2>Bienvenido: <%=locals.userLoggeado.email%></h1>
+							<form action="/users/logout" method="post">
+								<button type="submit">Logout</button>    
+							</form>
+							
+						<% } %>
 					</li>
 					
 				</ul>
