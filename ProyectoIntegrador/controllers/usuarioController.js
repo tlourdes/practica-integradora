@@ -57,7 +57,7 @@ const usuarioController={
             return res.render("login", {title: "Login"})
         }
     },
-    processLogin: function(req,res){ //no anda (x mas q el email no este en la db te deja loguearte)
+    processLogin: function(req,res){ 
         Usuario.findOne({
             where: [{
                 email: req.body.email
