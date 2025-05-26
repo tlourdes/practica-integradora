@@ -53,7 +53,7 @@ app.use(function(req, res, next){
 
 
 app.use('/', productsRouter);
-app.use('/miPerfil', perfilRouter);
+app.use('/perfil', perfilRouter);
 app.use('/resultados', searchResultsRouter);
 app.use('/login', loginRouter);  
 app.use('/register', registerRouter);  
