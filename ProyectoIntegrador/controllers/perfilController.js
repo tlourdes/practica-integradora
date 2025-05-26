@@ -3,6 +3,7 @@ const op  = data.Sequelize.Op;
 const Producto = data.Producto;
 const Usuario = data.Usuario;
 
+//ARREGLAR
 const perfilController ={
     perfil: function(req, res){
         Usuario.findByPk(req.params.id, {

@@ -73,15 +73,7 @@
                 <li>
                     <a href="/login">Ingresá <i class="fas fa-sign-in-alt" ></i></a>
                 </li>
-                <li>
-                    <% if (locals.userLoggeado != undefined) { %>
-                        <h2>Bienvenido: <%=locals.userLoggeado.email%></h1>
-                        <form action="/logout" method="post">
-                            <button type="submit">Logout</button>    
-                        </form>
-                        
-                    <% } %>
-                </li>
+                
             </ul>
         </nav>
     </div>

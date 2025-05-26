@@ -1,7 +1,12 @@
 	<!-- Header y head-->
 	
 
-	<%- include("./partials/headerLogueado") %>
+	<% if (locals.userLoggeado != undefined) { %>
+		
+		<%- include("./partials/headerLogueado") %>
+	<% } else {%>
+		<%- include("./partials/header") %>
+		<% }%>
 
 	<!-- /Headery head -->
 	

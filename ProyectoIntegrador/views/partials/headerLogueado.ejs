@@ -55,18 +55,18 @@
 	
 				<ul class="right-navbar">
 					<li><a href="/perfil">
-						<%= perfil.nombre_perfil %> <i class="fas fa-user"></i>
+						<%= perfil.nombre_usuario %> <i class="fas fa-user"></i>
 						</a>
 					</li>
 
 					<li>
-						<% if (locals.userLoggeado != undefined) { %>
-							<h2>Bienvenido: <%=locals.userLoggeado.email%></h1>
-							<form action="/logout" method="post">
-								<button type="submit">Logout</button>    
-							</form>
+						
+					<h2>Bienvenido: <%=locals.userLoggeado.email%></h1>
+					<form action="/logout" method="post">
+							<button type="submit">Logout</button>    
+					</form>
 							
-						<% } %>
+				
 					</li>
 					
 				</ul>
