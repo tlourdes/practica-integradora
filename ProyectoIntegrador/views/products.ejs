@@ -22,13 +22,14 @@
 			 <% for( let i = 0; i < productos.length; i++ ) { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<section class="product-box">
-						<a href="/detalle/:id">
+						<a href="/detalle/<%= productos[i].id %>">
 							<figure class="product-box_image">
-								<img src="<%= productos[i].imagen%>" alt="cafetera moulinex">
+								<img src="<%= productos[i].nombre_archivo_imagen%>" alt="celular">
 							</figure>
 							<article class="product-box_data">
 								<h2> <%= productos[i].nombre_producto %></h2>
 								<p> <%= productos[i].descripcion%></p>
+								<p>Publicado por: <%= productos[i].usuario.nombre_usuario%></p>
 								<p>Comentarios: <%= productos[i].comentarios.length%></p>  
 							</article>
 						</a>

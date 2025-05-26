@@ -1,14 +1,23 @@
 const data = require("../database/models");
-const db = require("../db/product")
-const Op = require("sequelize");
+const op  = data.Sequelize.Op;
 const Producto = data.Producto;
 //const searchResultsController = require("./search-resultsController")
 const productosController ={
     products: function(req,res){
-        res.render("products", {
-
-            productos : db.productos,
-        })
+       Producto.findAll({
+        include: [
+            { association: "usuario"},
+            { association: "comentarios"}],
+       })
+       .then(function(resultados){
+        //return res.send(resultados)
+            return res.render("products", {productos: resultados})
+       })
+       .catch(function(error){
+            return res.send(error);
+       })
+       
+        
     },
 
     product: function(req,res){
