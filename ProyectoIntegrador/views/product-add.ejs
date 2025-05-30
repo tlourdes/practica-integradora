@@ -20,11 +20,12 @@
 			<h2 class="col-12"> <br> 
 				
 				<div class="contenedorForms">
-				<form action="/agregar" method="get">
+					<form action="/products/agregar" method="POST" enctype="">
+
 					<label for="imagen">Imagen</label>
-					<input type="file" name="foto" required>
-					<label for="producto"> Nombre del producto</label>
-					<input type="text" name="producto" required>
+					<input type="file" name="imagen" required>
+					<label for="nombre"> Nombre del producto</label>
+					<input type="text" name="nombre" required>
 					<label for="descripcion">Descripción</label>
 					<input type="text" name="descripcion" required>
 					<button type="submit">Enviar</button>

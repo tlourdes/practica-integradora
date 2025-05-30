@@ -1,4 +1,5 @@
 const data = require("../database/models");
+const { post } = require("../routes");
 const op  = data.Sequelize.Op;
 const Producto = data.Producto;
 //const searchResultsController = require("./search-resultsController")
@@ -73,8 +74,51 @@ const productosController ={
             } else {
                 return res.render("product-add");
             }
-        }
+        },
 
+      addNew: function(req , res){
+        if (!req.session.userLoggeado){
+          return res.redirect("/login");
+        }
+    data.Producto.create ({
+      id_usuario : req.sesssion.userLoggeado, 
+      imagen : req.file, 
+      nombre_producto : req.body.nombre,
+      descripcion : req.body.descripcion, 
+
+    })
+      
+  .then (function(){
+    res.redirect("/");
+
+
+  })
+  .catch ( function(error){
+    console.log("No se pudo guardar el producto, vuelve a intearlo, muchas grcias", error );
+    res.send("No se pudo guardar el producto, vuelve a intearlo, muchas grcias" )
+
+
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+
+    
+        
     }
 
 
