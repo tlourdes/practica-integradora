@@ -1,7 +1,8 @@
 const data = require("../database/models");
-const { post } = require("../routes");
-const op  = data.Sequelize.Op;
+
+
 const Producto = data.Producto;
+const Usuario = data.Usuario;
 //const searchResultsController = require("./search-resultsController")
 const productosController ={
         products: function (req, res) {
@@ -64,7 +65,7 @@ const productosController ={
          },
     productAdd:  function(req, res){
             if (req.session.userLoggeado) {
-                data.Usuario.findByPk(req.session.userLoggeado.id)
+                Usuario.findByPk(req.session.userLoggeado.id)
                     .then(function(usuario) {
                         return res.render("product-add", {
                             userLoggeado: req.session.userLoggeado,
@@ -81,8 +82,8 @@ const productosController ={
           return res.redirect("/login");
         }
     data.Producto.create ({
-      id_usuario : req.sesssion.userLoggeado, 
-      imagen : req.file, 
+      usuario_id : req.session.userLoggeado.id, 
+      nombre_archivo_imagen : req.body.imagen, 
       nombre_producto : req.body.nombre,
       descripcion : req.body.descripcion, 
 
