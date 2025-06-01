@@ -65,20 +65,32 @@ hr {
 
 /*====== Main Header ======*/
 .main-header {
-  padding: 15px 0;
   background-color: var(--yellow);
+  color: white;
+  padding: 15px 30px;
 }
 
-.main-header_home-link,
-.main-header_credit-link {
+.main-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-header .logo img {
+  height: 40px
+}
+
+
+.main-header .titulo {
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.main-header_home-link{
   display: block;
 }
 
-.main-header_credit-link {
-  font-size: 1.5em;
-  margin-top: 20px;
-  text-align: center;
-}
 
 .search-form {
   position: relative;
@@ -109,6 +121,7 @@ hr {
 
 
 /*====== Main Navbar ======*/
+
 .btn-toggle-navbar {
   background-color: var(--dark-blue);
   color: #ffffff;
@@ -121,31 +134,76 @@ hr {
 }
 
 .main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 20px;
-  display: none;
 }
-
-.left-navbar,
 .right-navbar {
-  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin-left: auto;
+  gap: 5px;
+}
+.right-navbar .bienvenida {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logout{
-  background: transparent;
-  border: 0px;
-  cursor: pointer;
-  font-size: 1em;
+.right-navbar h2 {
+  font-size: 15px;
+  margin: 0;
+  color: white;
+  font-weight: 500;
 }
 
-.logout:hover{
-  color: hsl(196, 100%, 73%);
+.right-navbar form {
+  margin: 0;
 }
 
-.left-navbar a,
-.right-navbar a {
-  display: block;
-  padding: 5px 0;
-  border-bottom: solid 1px var(--gray);
+.right-navbar button {
+  background-color: white;
+  color:  #1e4bc6;
+  border: none;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.right-navbar button:hover {
+  background-color: #e6e6e6;
+}
+
+.right-navbar .nombreUser a {
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
+.left-navbar{
+  font-size: 15px;
+}
+
+.right-navbar1 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.right-navbar1 li {
+  list-style: none;
+}
+
+.right-navbar1 a {
+  font-size: 15px;
+  text-decoration: underline;
+  color: white;
 }
 
 
@@ -506,7 +564,10 @@ textarea.form-input {
 
   .left-navbar a:hover,
   .right-navbar a:hover {
-    color: var(--light-blue);
+    color: rgb(71, 209, 255);
+  }
+  .right-navbar1 a:hover{
+    color: rgb(71, 209, 255);
   }
 
   .left-navbar li {
