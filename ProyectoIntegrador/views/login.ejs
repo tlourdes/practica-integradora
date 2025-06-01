@@ -2,7 +2,7 @@
 	
 	<% if (locals.userLoggeado != undefined) { %>
 		
-		<%- include("./partials/headerLogueado") %>
+		<%- include("./partials/headerLogueado", { perfil: perfil }) %>
 	<% } else {%>
 		<%- include("./partials/header") %>
 		<% }%>

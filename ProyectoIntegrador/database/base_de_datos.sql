@@ -45,7 +45,7 @@ FOREIGN KEY (productos_id) REFERENCES productos(id)
 );
 
 INSERT INTO usuarios(nombre_usuario, email, contra, fecha, dni, foto_perfil)
-VALUES ('Luciano Peirano', 'lpeiranozavaglia@udesa.com', 'Integrador10', '2000-02-01', 45074993, 'https://media.istockphoto.com/id/647830296/es/foto/hombre-con-una-expresi%C3%B3n-seria.jpg?s=612x612&w=0&k=20&c=8m3NP6BdlxBHDGWJccRkHA2mtbp9gOHzZeDcVyBVKFk='),
+VALUES ('Luciano Peirano', 'lpeiranozavaglia@udesa.com', 'Integrador10', '2000-02-01', 45074993, 'hombre1.jpg'),
 ('ana123', 'ana@gmail.com', 'abcd', '1992-03-15', 23456789, 'anaaa.png'),
 ('maria.fer','maria@hotmail.com', 'pass123', '1995-06-22', 34567890, 'maria.jpg'),
 ('lucas10','lucas@gmail.com', 'lucas2023', '1988-10-10', 45678901, 'lucas.png'),
