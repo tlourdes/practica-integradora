@@ -3,10 +3,11 @@ const data = require("../database/models");
 
 const Producto = data.Producto;
 const Usuario = data.Usuario;
+const Comentario = data.Comentario;
 //const searchResultsController = require("./search-resultsController")
 const productosController ={
         products: function (req, res) {
-          data.Producto.findAll({
+          Producto.findAll({
             include: [
               { association: "usuario" },
               { association: "comentarios" }
@@ -14,7 +15,7 @@ const productosController ={
           })
           .then(function (productos) {
             if (req.session.userLoggeado) {
-              data.Usuario.findByPk(req.session.userLoggeado.id)
+              Usuario.findByPk(req.session.userLoggeado.id)
                 .then(function (usuario) {
                   return res.render("products", {
                     productos: productos,
@@ -45,7 +46,7 @@ const productosController ={
              })
              .then(function(producto)  {
                  if (req.session.userLoggeado) {
-                     data.Usuario.findByPk(req.session.userLoggeado.id)
+                     Usuario.findByPk(req.session.userLoggeado.id)
                          .then(function(usuario) {
                              return res.render("product", {
                                  producto: producto,
@@ -78,10 +79,10 @@ const productosController ={
         },
 
       addNew: function(req , res){
-        if (!req.session.userLoggeado){
+        if (req.session.userLoggeado == undefined){
           return res.redirect("/login");
         }
-    data.Producto.create ({
+    Producto.create ({
       usuario_id : req.session.userLoggeado.id, 
       nombre_archivo_imagen : req.body.imagen, 
       nombre_producto : req.body.nombre,
@@ -95,31 +96,31 @@ const productosController ={
 
   })
   .catch ( function(error){
-    console.log("No se pudo guardar el producto, vuelve a intearlo, muchas grcias", error );
-    res.send("No se pudo guardar el producto, vuelve a intearlo, muchas grcias" )
+    console.log("No se pudo guardar el producto, vuelve a intentarlo, muchas gracias", error );
+    res.send("No se pudo guardar el producto, vuelve a intentarlo, muchas gracias" )
 
 
   })
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  }
+  },
+  comentario: function(req, res){
 
-    
-        
+    if (req.session.userLoggeado == undefined){
+      return res.redirect("/login");
+    }
+    Comentario.create({
+      usuario_id : req.session.userLoggeado.id, 
+      productos_id : req.params.id,
+      comentario : req.body.comentario, 
+    })
+    .then(function(resultado){
+      res.redirect('/producto/detalle/' + req.params.id)
+    })
+    .catch ( function(error){
+      return res.send(error)
+    })
+   
+  } 
     }
 
 
